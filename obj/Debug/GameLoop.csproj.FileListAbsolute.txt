@@ -1,0 +1,5 @@
+C:\Users\Keith\Documents\C#\IS253_Projects\GameLoop\bin\Debug\GameLoop.exe
+C:\Users\Keith\Documents\C#\IS253_Projects\GameLoop\bin\Debug\GameLoop.pdb
+C:\Users\Keith\Documents\C#\IS253_Projects\GameLoop\obj\Debug\GameLoop.csprojResolveAssemblyReference.cache
+C:\Users\Keith\Documents\C#\IS253_Projects\GameLoop\obj\Debug\GameLoop.exe
+C:\Users\Keith\Documents\C#\IS253_Projects\GameLoop\obj\Debug\GameLoop.pdb
