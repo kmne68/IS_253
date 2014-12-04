@@ -1,11 +1,14 @@
 ﻿/******************************************************************************
  * Keith Emery
  * IS 253
- * 2014/09/15
+ * 2014/10/01
  * RPS is a simple rock, paper, scissors game. The program asks the user for
  * his/her choice, gets a random choice for the computer then determines
  * whether the player or the computer has won using the familiar rules of the
- * game. There is a console version with a Windows Form version in development.
+ * game. This iteration implements the WPF version of the game by adding it
+ * to the solution as a separate project. This version is substantially similar
+ * logically to the console and windows form versions of the game and is 
+ * primarily for experiencing the WPF environment.
  * 
  * ***************************************************************************/
 
@@ -15,11 +18,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GameLoop
+public enum Throw { rock, paper, scissors };
+
+namespace RPS_WPF
 {
     class RockPaperScissors
     {
-        public enum Throw { rock = 1, paper, scissors };
+
         private int playerChoice;
         private int computerChoice;
 
@@ -48,23 +53,27 @@ namespace GameLoop
         // Convert the player's choice to an integer to simplify processing
         public int playerChoiceToInt(string choice)
         {
+            int playerChoice;
             if (choice.Equals("R") || (choice.Equals("r")))
-                return 0;
+                playerChoice =  0;
             else if (choice.Equals("P") || (choice.Equals("p")))
-                return 3;
+                playerChoice = 3;
             else
-                return 6;
+                playerChoice = 6;
+            return playerChoice;
         }
 
         // Convert the computer's choice to a string for displaying to the player
         public string computerChoiceToString(int computerThrow)
         {
-            if (computerThrow == 0)
-                return "Rock";
-            else if (computerThrow == 1)
-                return "Paper";
+            string computerString;
+            if (computerThrow == (int)Throw.rock)
+                computerString = "Rock";
+            else if (computerThrow == (int)Throw.paper)
+                computerString = "Paper";
             else
-                return "Scissors";
+                computerString = "Scissors";
+            return computerString;
         }
 
         // Generate a random number between 0 and two (inclusive) to correspond to R, P or S

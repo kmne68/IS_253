@@ -1,11 +1,11 @@
 ﻿/******************************************************************************
  * Keith Emery
  * IS 253
- * 2014/09/15
+ * 2014/09/21
  * RPS is a simple rock, paper, scissors game. The program asks the user for
  * his/her choice, gets a random choice for the computer then determines
  * whether the player or the computer has won using the familiar rules of the
- * game. There is a console version with a Windows Form version in development.
+ * game. This is the Windows Form version. There is also a console version.
  * 
  * ***************************************************************************/
 
@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GameLoop
+namespace RPS_WindowsForm
 {
     class RockPaperScissors
     {

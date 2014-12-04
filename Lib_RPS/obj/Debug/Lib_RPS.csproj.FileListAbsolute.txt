@@ -1,0 +1,5 @@
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\Lib_RPS\bin\Debug\Lib_RPS.dll
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\Lib_RPS\bin\Debug\Lib_RPS.pdb
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\Lib_RPS\obj\Debug\Lib_RPS.csprojResolveAssemblyReference.cache
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\Lib_RPS\obj\Debug\Lib_RPS.dll
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\Lib_RPS\obj\Debug\Lib_RPS.pdb

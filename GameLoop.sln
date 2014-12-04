@@ -5,6 +5,14 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLoop", "GameLoop.csproj", "{ABC4E080-08A4-4D7A-9427-06B1A2A42BB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS_WindowsForm", "RPS_WindowsForm\RPS_WindowsForm.csproj", "{F62AA073-AA27-44FE-8BF9-636A0539E39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameManager", "..\GameManager\GameManager.csproj", "{0EF2430D-97E3-4A57-92CB-DB4F6970FC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS_WPF", "RPS_WPF\RPS_WPF.csproj", "{426C05B2-305F-4933-B0EF-17B20F82D94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_RPS", "Lib_RPS\Lib_RPS.csproj", "{6021CF45-881C-4225-BC8B-CAD6E0C04DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{ABC4E080-08A4-4D7A-9427-06B1A2A42BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABC4E080-08A4-4D7A-9427-06B1A2A42BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABC4E080-08A4-4D7A-9427-06B1A2A42BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62AA073-AA27-44FE-8BF9-636A0539E39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62AA073-AA27-44FE-8BF9-636A0539E39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62AA073-AA27-44FE-8BF9-636A0539E39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62AA073-AA27-44FE-8BF9-636A0539E39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF2430D-97E3-4A57-92CB-DB4F6970FC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF2430D-97E3-4A57-92CB-DB4F6970FC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF2430D-97E3-4A57-92CB-DB4F6970FC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF2430D-97E3-4A57-92CB-DB4F6970FC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426C05B2-305F-4933-B0EF-17B20F82D94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426C05B2-305F-4933-B0EF-17B20F82D94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426C05B2-305F-4933-B0EF-17B20F82D94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426C05B2-305F-4933-B0EF-17B20F82D94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6021CF45-881C-4225-BC8B-CAD6E0C04DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6021CF45-881C-4225-BC8B-CAD6E0C04DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6021CF45-881C-4225-BC8B-CAD6E0C04DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6021CF45-881C-4225-BC8B-CAD6E0C04DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

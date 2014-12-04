@@ -1,0 +1,8 @@
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\bin\Debug\BaseObjects.dll
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\bin\Debug\BaseObjects.pdb
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\obj\Debug\BaseObjects.csprojResolveAssemblyReference.cache
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\obj\Debug\BaseObjects.Form1.resources
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\obj\Debug\BaseObjects.Properties.Resources.resources
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\obj\Debug\BaseObjects.csproj.GenerateResource.Cache
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\obj\Debug\BaseObjects.dll
+C:\Users\Keith\Documents\C#\IS253_Projects\BaseObjects\obj\Debug\BaseObjects.pdb
