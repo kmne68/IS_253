@@ -17,6 +17,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+using System.Reflection;
 
 
 namespace RPS_WindowsForm
@@ -32,18 +34,24 @@ namespace RPS_WindowsForm
             InitializeComponent();
         }
 
+        Assembly assembly;
+        Stream imageStream;
+        StreamReader imageStreamReader;
+
         private BindingSource usersBindingSource = new BindingSource();
 
-
-        private void btn_rock_Click(object sender, EventArgs e)
+        private void RPS_Form_Load(object sender, EventArgs e)
         {
-            userChoice = "r";
-            RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
-            int playerThrow = RPS.playerChoiceToInt(userChoice);
-            txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
-            txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
-            btn_rock.BackColor = Color.AliceBlue;
+            try
+            {
+                assembly = Assembly.GetExecutingAssembly();
+                imageStream = assembly.GetManifestResourceStream("RPS_WindowsForm.Images.scissors_drawn.bmp");
+                imageStreamReader = new StreamReader(assembly.GetManifestResourceStream("RPS_WindowsForm.Images.scissors_drawn.bmp"));
+            }
+            catch
+            {
+                MessageBox.Show("Error accessing resources.");
+            }
         }
 
         private void btn_paper_Click(object sender, EventArgs e)
@@ -56,7 +64,28 @@ namespace RPS_WindowsForm
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
             btn_paper.BackColor = Color.DarkRed;
             btn_paper.ForeColor = Color.AntiqueWhite;
+
+            try
+            {
+                //Bitmap image = new Bitmap(type.Assembly.GetManifestResourceStream(imageStream));
+                pbx_paper.Image = new Bitmap(imageStream);
+            }
+            catch
+            {
+                MessageBox.Show("Error creating image.");
+            }
         }
+        private void btn_rock_Click(object sender, EventArgs e)
+        {
+            userChoice = "r";
+            RockPaperScissors RPS = new RockPaperScissors(userChoice);
+            int computerThrow = RPS.computerThrow();
+            int playerThrow = RPS.playerChoiceToInt(userChoice);
+            txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
+            txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
+            btn_rock.BackColor = Color.AliceBlue;
+        }
+
 
         private void btn_scissors_Click(object sender, EventArgs e)
         {
@@ -79,6 +108,8 @@ namespace RPS_WindowsForm
             txt_winner.Clear();
 
         }
+
+
         /*
         private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {

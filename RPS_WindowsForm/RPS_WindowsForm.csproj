@@ -144,6 +144,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Images\paper.bmp" />
+    <EmbeddedResource Include="Images\paper_drawn.bmp" />
+    <EmbeddedResource Include="Images\paper_object.bmp" />
+    <EmbeddedResource Include="Images\rock.bmp" />
+    <EmbeddedResource Include="Images\rock_drawn.bmp" />
+    <EmbeddedResource Include="Images\rock_object.bmp" />
+    <EmbeddedResource Include="Images\scissors.bmp" />
+    <EmbeddedResource Include="Images\scissors_drawn.bmp" />
+    <EmbeddedResource Include="Images\scissors_object.bmp" />
     <Content Include="Users.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
