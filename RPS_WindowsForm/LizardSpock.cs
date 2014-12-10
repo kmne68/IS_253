@@ -54,31 +54,11 @@ namespace RPS_WindowsForm
 
 
 
-        private void btn_playAgain_Click(object sender, EventArgs e)
-        {
-            btn_rock.BackColor = SystemColors.Control;
-            btn_paper.BackColor = SystemColors.Control;
-            btn_paper.ForeColor = Color.Black;
-            btn_scissors.BackColor = SystemColors.Control;
-            txt_computerChoice.Clear();
-            txt_winner.Clear();
-            pbx_paper.Hide();
-            pbx_rock.Hide();
-            pbx_scissors.Hide();
-
-        }
-
-        private void btn_continue_Click(object sender, EventArgs e)
-        {
-            RPS_Form rps = new RPS_Form();
-            rps.Show();
-        }
-
-        private void btn_rock_Click_1(object sender, EventArgs e)
+        private void btn_rock_Click(object sender, EventArgs e)
         {
             userChoice = "r";
             RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
+            int computerThrow = RPS.expandedComputerThrow();
             int playerThrow = RPS.playerChoiceToInt(userChoice);
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
@@ -97,11 +77,11 @@ namespace RPS_WindowsForm
             }
         }
 
-        private void btn_paper_Click_1(object sender, EventArgs e)
+        private void btn_paper_Click(object sender, EventArgs e)
         {
             userChoice = "p";
             RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
+            int computerThrow = RPS.expandedComputerThrow();
             int playerThrow = RPS.playerChoiceToInt(userChoice);
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
@@ -122,11 +102,11 @@ namespace RPS_WindowsForm
             }
         }
 
-        private void btn_scissors_Click_1(object sender, EventArgs e)
+        private void btn_scissors_Click(object sender, EventArgs e)
         {
             userChoice = "s";
             RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
+            int computerThrow = RPS.expandedComputerThrow();
             int playerThrow = RPS.playerChoiceToInt(userChoice);
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
@@ -145,6 +125,48 @@ namespace RPS_WindowsForm
             }
         }
 
+        private void btn_lizard_Click(object sender, EventArgs e)
+        {
+            userChoice = "l";
+            RockPaperScissors LS = new RockPaperScissors(userChoice);
+            int computerThrow = LS.expandedComputerThrow();
+            int playerThrow = LS.playerChoiceToInt(userChoice);
+            txt_computerChoice.Text = LS.computerChoiceToString(computerThrow);
+            txt_winner.Text = LS.determineWinner(computerThrow, playerThrow);
+            btn_lizard.BackColor = Color.GreenYellow;
+        }
+
+        private void btn_spock_Click(object sender, EventArgs e)
+        {
+            userChoice = "k";
+            RockPaperScissors LS = new RockPaperScissors(userChoice);
+            int computerThrow = LS.expandedComputerThrow();
+            int playerThrow = LS.playerChoiceToInt(userChoice);
+            txt_computerChoice.Text = LS.computerChoiceToString(computerThrow);
+            txt_winner.Text = LS.determineWinner(computerThrow, playerThrow);
+            btn_spock.BackColor = Color.DodgerBlue;
+        }
+
+        private void btn_playAgain_Click(object sender, EventArgs e)
+        {
+            btn_rock.BackColor = SystemColors.Control;
+            btn_paper.BackColor = SystemColors.Control;
+            btn_paper.ForeColor = Color.Black;
+            btn_scissors.BackColor = SystemColors.Control;
+            btn_lizard.BackColor = SystemColors.Control;
+            btn_spock.BackColor = SystemColors.Control;
+            txt_computerChoice.Clear();
+            txt_winner.Clear();
+            pbx_paper.Hide();
+            pbx_rock.Hide();
+            pbx_scissors.Hide();
+        }
+
+        private void btn_continue_Click(object sender, EventArgs e)
+        {
+            ChooseGame game = new ChooseGame();
+            game.Show();
+        }
 
 
 

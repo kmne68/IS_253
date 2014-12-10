@@ -32,8 +32,8 @@ namespace RPS_WindowsForm
 
         private void btn_continue_Click_1(object sender, EventArgs e)
         {
-            RPS_Form rps = new RPS_Form();
-            rps.Show();
+            ChooseGame game = new ChooseGame();
+            game.Show();
         }
     }
 }

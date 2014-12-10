@@ -19,7 +19,7 @@ namespace RPS_WindowsForm
 {
     class RockPaperScissors
     {
-        public enum Throw { rock = 0, paper = 3, scissors = 6, lizard, Spock };
+        public enum Throw { rock, paper, scissors, lizard, Spock };
         private int playerChoice;
         private int computerChoice;
 
@@ -51,7 +51,7 @@ namespace RPS_WindowsForm
             }
         }
 
-        // Convert the player's choice to an integer to simplify processing
+        // Convert the player's choice to an integer to simplify processing (for console)
         public int playerChoiceToInt(string choice)
         {
             int playerPick;
@@ -106,7 +106,7 @@ namespace RPS_WindowsForm
         // as an index to access the appropriate value of the winner array.
         public string determineWinner(int computer, int player)
         {
-            int result = player + computer;
+            //int result = player + computer;
             string matchWinner = expandedWinner[computer, player];
             //string matchWinner = winner[result];
             //string winner;

@@ -40,6 +40,9 @@
             this.pbx_scissors = new System.Windows.Forms.PictureBox();
             this.pbx_lizard = new System.Windows.Forms.PictureBox();
             this.pbx_spock = new System.Windows.Forms.PictureBox();
+            this.btn_playAgain = new System.Windows.Forms.Button();
+            this.lbl_computerChoice = new System.Windows.Forms.Label();
+            this.lbl_winner = new System.Windows.Forms.Label();
             this.pnl_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_rock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_paper)).BeginInit();
@@ -50,6 +53,9 @@
             // 
             // pnl_main
             // 
+            this.pnl_main.Controls.Add(this.lbl_winner);
+            this.pnl_main.Controls.Add(this.lbl_computerChoice);
+            this.pnl_main.Controls.Add(this.btn_playAgain);
             this.pnl_main.Controls.Add(this.pbx_spock);
             this.pnl_main.Controls.Add(this.pbx_lizard);
             this.pnl_main.Controls.Add(this.pbx_scissors);
@@ -76,7 +82,7 @@
             this.btn_rock.TabIndex = 0;
             this.btn_rock.Text = "Rock";
             this.btn_rock.UseVisualStyleBackColor = true;
-            this.btn_rock.Click += new System.EventHandler(this.btn_rock_Click_1);
+            this.btn_rock.Click += new System.EventHandler(this.btn_rock_Click);
             // 
             // btn_paper
             // 
@@ -86,7 +92,7 @@
             this.btn_paper.TabIndex = 1;
             this.btn_paper.Text = "Paper";
             this.btn_paper.UseVisualStyleBackColor = true;
-            this.btn_paper.Click += new System.EventHandler(this.btn_paper_Click_1);
+            this.btn_paper.Click += new System.EventHandler(this.btn_paper_Click);
             // 
             // btn_scissors
             // 
@@ -96,7 +102,7 @@
             this.btn_scissors.TabIndex = 2;
             this.btn_scissors.Text = "Scissors";
             this.btn_scissors.UseVisualStyleBackColor = true;
-            this.btn_scissors.Click += new System.EventHandler(this.btn_scissors_Click_1);
+            this.btn_scissors.Click += new System.EventHandler(this.btn_scissors_Click);
             // 
             // btn_lizard
             // 
@@ -106,6 +112,7 @@
             this.btn_lizard.TabIndex = 3;
             this.btn_lizard.Text = "Lizard";
             this.btn_lizard.UseVisualStyleBackColor = true;
+            this.btn_lizard.Click += new System.EventHandler(this.btn_lizard_Click);
             // 
             // btn_spock
             // 
@@ -115,6 +122,7 @@
             this.btn_spock.TabIndex = 4;
             this.btn_spock.Text = "Spock";
             this.btn_spock.UseVisualStyleBackColor = true;
+            this.btn_spock.Click += new System.EventHandler(this.btn_spock_Click);
             // 
             // txt_computerChoice
             // 
@@ -170,6 +178,34 @@
             this.pbx_spock.TabIndex = 11;
             this.pbx_spock.TabStop = false;
             // 
+            // btn_playAgain
+            // 
+            this.btn_playAgain.Location = new System.Drawing.Point(446, 312);
+            this.btn_playAgain.Name = "btn_playAgain";
+            this.btn_playAgain.Size = new System.Drawing.Size(75, 23);
+            this.btn_playAgain.TabIndex = 12;
+            this.btn_playAgain.Text = "Play Again";
+            this.btn_playAgain.UseVisualStyleBackColor = true;
+            this.btn_playAgain.Click += new System.EventHandler(this.btn_playAgain_Click);
+            // 
+            // lbl_computerChoice
+            // 
+            this.lbl_computerChoice.AutoSize = true;
+            this.lbl_computerChoice.Location = new System.Drawing.Point(391, 59);
+            this.lbl_computerChoice.Name = "lbl_computerChoice";
+            this.lbl_computerChoice.Size = new System.Drawing.Size(117, 18);
+            this.lbl_computerChoice.TabIndex = 13;
+            this.lbl_computerChoice.Text = "Computer Choice";
+            // 
+            // lbl_winner
+            // 
+            this.lbl_winner.AutoSize = true;
+            this.lbl_winner.Location = new System.Drawing.Point(391, 189);
+            this.lbl_winner.Name = "lbl_winner";
+            this.lbl_winner.Size = new System.Drawing.Size(51, 18);
+            this.lbl_winner.TabIndex = 14;
+            this.lbl_winner.Text = "Winner";
+            // 
             // LizardSpock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -203,5 +239,8 @@
         private System.Windows.Forms.PictureBox pbx_scissors;
         private System.Windows.Forms.PictureBox pbx_paper;
         private System.Windows.Forms.PictureBox pbx_rock;
+        private System.Windows.Forms.Button btn_playAgain;
+        private System.Windows.Forms.Label lbl_winner;
+        private System.Windows.Forms.Label lbl_computerChoice;
     }
 }
