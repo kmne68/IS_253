@@ -22,3 +22,4 @@ C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsFor
 C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\bin\Debug\BaseObjects.dll
 C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\bin\Debug\BaseObjects.pdb
 C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\obj\Debug\RPS_WindowsForm.BaseForm.resources
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\obj\Debug\RPS_WindowsForm.LizardSpock.resources

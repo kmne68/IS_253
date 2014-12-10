@@ -5,7 +5,7 @@
  * RPS is a simple rock, paper, scissors game. The program asks the user for
  * his/her choice, gets a random choice for the computer then determines
  * whether the player or the computer has won using the familiar rules of the
- * game. This is the Windows Form version. There is also a console version.
+ * game. This is the console version.
  * 
  * ***************************************************************************/
 

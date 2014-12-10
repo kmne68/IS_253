@@ -65,6 +65,10 @@
             this.pnl_main.Controls.Add(this.txt_winner);
             this.pnl_main.Size = new System.Drawing.Size(621, 353);
             // 
+            // btn_continue
+            // 
+            this.btn_continue.Click += new System.EventHandler(this.btn_continue_Click);
+            // 
             // btn_rock
             // 
             this.btn_rock.Location = new System.Drawing.Point(32, 68);
