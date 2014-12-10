@@ -36,6 +36,10 @@
             // 
             this.pnl_main.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_main.BackgroundImage")));
             // 
+            // btn_continue
+            // 
+            this.btn_continue.Click += new System.EventHandler(this.btn_continue_Click_1);
+            // 
             // btn_continue_main
             // 
             this.btn_continue_main.BackColor = System.Drawing.SystemColors.Control;
@@ -44,7 +48,7 @@
             this.btn_continue_main.Name = "btn_continue_main";
             this.btn_continue_main.Size = new System.Drawing.Size(112, 32);
             this.btn_continue_main.TabIndex = 0;
-            this.btn_continue_main.Text = "Launch";
+            this.btn_continue_main.Text = "Launch DB";
             this.btn_continue_main.UseVisualStyleBackColor = false;
             this.btn_continue_main.Click += new System.EventHandler(this.btn_continue_Click);
             // 

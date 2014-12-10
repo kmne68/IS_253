@@ -29,5 +29,11 @@ namespace RPS_WindowsForm
             UserInformation ui = new UserInformation();
             ui.ShowDialog();
         }
+
+        private void btn_continue_Click_1(object sender, EventArgs e)
+        {
+            RPS_Form rps = new RPS_Form();
+            rps.Show();
+        }
     }
 }

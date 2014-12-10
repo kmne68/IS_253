@@ -19,6 +19,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Reflection;
+using System.Collections;
 
 
 namespace RPS_WindowsForm
@@ -36,17 +37,18 @@ namespace RPS_WindowsForm
 
         Assembly assembly;
         Stream imageStream;
-        StreamReader imageStreamReader;
+        string[] imageNames = new string[] {    "paper.bmp", "paper_drawn.bmp", "paper_object.bmp",
+                                                "rock.bmp", "rock_drawn.bmp", "rock_object.bmp",
+                                                "scissors.bmp", "scissors_drawn.bmp", "scissors_object" };
 
-        private BindingSource usersBindingSource = new BindingSource();
+       // List<ImageInfo> imageList = new List<ImageInfo>();
 
         private void RPS_Form_Load(object sender, EventArgs e)
         {
             try
             {
                 assembly = Assembly.GetExecutingAssembly();
-                imageStream = assembly.GetManifestResourceStream("RPS_WindowsForm.Images.scissors_drawn.bmp");
-                imageStreamReader = new StreamReader(assembly.GetManifestResourceStream("RPS_WindowsForm.Images.scissors_drawn.bmp"));
+ //               imageStream = assembly.GetManifestResourceStream("RPS_WindowsForm.Images.paper.bmp");
             }
             catch
             {
@@ -67,7 +69,9 @@ namespace RPS_WindowsForm
 
             try
             {
+                imageStream = assembly.GetManifestResourceStream("RPS_WindowsForm.Images.paper.bmp");
                 //Bitmap image = new Bitmap(type.Assembly.GetManifestResourceStream(imageStream));
+                pbx_paper.Show();
                 pbx_paper.Image = new Bitmap(imageStream);
             }
             catch
@@ -84,6 +88,18 @@ namespace RPS_WindowsForm
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
             btn_rock.BackColor = Color.AliceBlue;
+
+            try
+            {
+                imageStream = assembly.GetManifestResourceStream("RPS_WindowsForm.Images.rock.bmp");
+                //Bitmap image = new Bitmap(type.Assembly.GetManifestResourceStream(imageStream));
+                pbx_rock.Show();
+                pbx_rock.Image = new Bitmap(imageStream);
+            }
+            catch
+            {
+                MessageBox.Show("Error creating image.");
+            }
         }
 
 
@@ -96,6 +112,18 @@ namespace RPS_WindowsForm
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
             btn_scissors.BackColor = Color.DarkSeaGreen;
+
+            try
+            {
+                imageStream = assembly.GetManifestResourceStream("RPS_WindowsForm.Images.scissors.bmp");
+                //Bitmap image = new Bitmap(type.Assembly.GetManifestResourceStream(imageStream));
+                pbx_scissors.Show();
+                pbx_scissors.Image = new Bitmap(imageStream);
+            }
+            catch
+            {
+                MessageBox.Show("Error creating image.");
+            }
         }
 
         private void btn_playAgain_Click(object sender, EventArgs e)
@@ -106,17 +134,11 @@ namespace RPS_WindowsForm
             btn_scissors.BackColor = SystemColors.Control;
             txt_computerChoice.Clear();
             txt_winner.Clear();
+            pbx_paper.Hide();
+            pbx_rock.Hide();
+            pbx_scissors.Hide();
 
         }
 
-
-        /*
-        private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.usersBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.usersDataSet);
-
-        } */
     }
 }

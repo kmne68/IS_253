@@ -100,7 +100,7 @@
             // 
             // txt_computerChoice
             // 
-            this.txt_computerChoice.Location = new System.Drawing.Point(449, 50);
+            this.txt_computerChoice.Location = new System.Drawing.Point(317, 75);
             this.txt_computerChoice.Margin = new System.Windows.Forms.Padding(4);
             this.txt_computerChoice.Name = "txt_computerChoice";
             this.txt_computerChoice.Size = new System.Drawing.Size(148, 25);
@@ -108,7 +108,7 @@
             // 
             // txt_winner
             // 
-            this.txt_winner.Location = new System.Drawing.Point(466, 218);
+            this.txt_winner.Location = new System.Drawing.Point(317, 206);
             this.txt_winner.Margin = new System.Windows.Forms.Padding(4);
             this.txt_winner.Name = "txt_winner";
             this.txt_winner.Size = new System.Drawing.Size(148, 25);
@@ -117,7 +117,7 @@
             // lbl_computerChoice
             // 
             this.lbl_computerChoice.AutoSize = true;
-            this.lbl_computerChoice.Location = new System.Drawing.Point(446, 16);
+            this.lbl_computerChoice.Location = new System.Drawing.Point(314, 32);
             this.lbl_computerChoice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_computerChoice.Name = "lbl_computerChoice";
             this.lbl_computerChoice.Size = new System.Drawing.Size(117, 18);
@@ -127,7 +127,7 @@
             // lbl_winner
             // 
             this.lbl_winner.AutoSize = true;
-            this.lbl_winner.Location = new System.Drawing.Point(463, 181);
+            this.lbl_winner.Location = new System.Drawing.Point(314, 174);
             this.lbl_winner.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_winner.Name = "lbl_winner";
             this.lbl_winner.Size = new System.Drawing.Size(51, 18);
@@ -146,7 +146,7 @@
             // 
             // btn_playAgain
             // 
-            this.btn_playAgain.Location = new System.Drawing.Point(514, 288);
+            this.btn_playAgain.Location = new System.Drawing.Point(493, 293);
             this.btn_playAgain.Margin = new System.Windows.Forms.Padding(4);
             this.btn_playAgain.Name = "btn_playAgain";
             this.btn_playAgain.Size = new System.Drawing.Size(100, 32);
@@ -182,9 +182,9 @@
             // 
             // pbx_computerChoice
             // 
-            this.pbx_computerChoice.Location = new System.Drawing.Point(514, 82);
+            this.pbx_computerChoice.Location = new System.Drawing.Point(493, 68);
             this.pbx_computerChoice.Name = "pbx_computerChoice";
-            this.pbx_computerChoice.Size = new System.Drawing.Size(100, 50);
+            this.pbx_computerChoice.Size = new System.Drawing.Size(64, 64);
             this.pbx_computerChoice.TabIndex = 12;
             this.pbx_computerChoice.TabStop = false;
             // 
