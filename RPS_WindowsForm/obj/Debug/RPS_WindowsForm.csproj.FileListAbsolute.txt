@@ -24,3 +24,7 @@ C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsFor
 C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\obj\Debug\RPS_WindowsForm.BaseForm.resources
 C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\obj\Debug\RPS_WindowsForm.LizardSpock.resources
 C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\obj\Debug\RPS_WindowsForm.ChooseGame.resources
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\bin\Debug\UsersDataSet.Designer.cs
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\bin\Debug\UsersDataSet.xsc
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\bin\Debug\UsersDataSet.xsd
+C:\Users\Keith\Documents\C_Sharp\IS253_Projects\GameLoop\GameLoop\RPS_WindowsForm\bin\Debug\UsersDataSet.xss

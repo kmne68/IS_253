@@ -29,6 +29,7 @@ namespace RPS_WindowsForm
     public partial class RPS_Form : BaseForm
     {
         private string userChoice;
+        private const int COMPUTER_CHOICE = 3;      
 
         public RPS_Form()
         {
@@ -41,8 +42,7 @@ namespace RPS_WindowsForm
                                                 "rock.bmp", "rock_drawn.bmp", "rock_object.bmp",
                                                 "scissors.bmp", "scissors_drawn.bmp", "scissors_object" };
 
-       // List<ImageInfo> imageList = new List<ImageInfo>();
-
+        // Load form level variables
         private void RPS_Form_Load(object sender, EventArgs e)
         {
             try
@@ -56,11 +56,16 @@ namespace RPS_WindowsForm
             }
         }
 
+        /// <summary>
+        /// Instantiate an RPS game, set players choice and determine winner.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_paper_Click(object sender, EventArgs e)
         {
             userChoice = "p";
-            RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
+            RockPaperScissors RPS = new RockPaperScissors();
+            int computerThrow = RPS.computerThrow(COMPUTER_CHOICE);
             int playerThrow = RPS.playerChoiceToInt(userChoice);
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
@@ -79,11 +84,17 @@ namespace RPS_WindowsForm
                 MessageBox.Show("Error creating image.");
             }
         }
+
+        /// <summary>
+        /// Instantiate an RPS game, set players choice and determine winner.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_rock_Click(object sender, EventArgs e)
         {
             userChoice = "r";
-            RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
+            RockPaperScissors RPS = new RockPaperScissors();
+            int computerThrow = RPS.computerThrow(COMPUTER_CHOICE);
             int playerThrow = RPS.playerChoiceToInt(userChoice);
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
@@ -102,12 +113,16 @@ namespace RPS_WindowsForm
             }
         }
 
-
+        /// <summary>
+        /// Instantiate an RPS game, set players choice and determine winner.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_scissors_Click(object sender, EventArgs e)
         {
             userChoice = "s";
-            RockPaperScissors RPS = new RockPaperScissors(userChoice);
-            int computerThrow = RPS.computerThrow();
+            RockPaperScissors RPS = new RockPaperScissors();
+            int computerThrow = RPS.computerThrow(COMPUTER_CHOICE);
             int playerThrow = RPS.playerChoiceToInt(userChoice);
             txt_computerChoice.Text = RPS.computerChoiceToString(computerThrow);
             txt_winner.Text = RPS.determineWinner(computerThrow, playerThrow);
@@ -144,6 +159,7 @@ namespace RPS_WindowsForm
         {
             ChooseGame game = new ChooseGame();
             game.Show();
+            this.Close();
         }
 
     }

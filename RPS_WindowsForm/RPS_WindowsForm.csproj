@@ -111,6 +111,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UsersDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
@@ -151,14 +152,17 @@
     </Compile>
     <None Include="UsersDataSet.xsc">
       <DependentUpon>UsersDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="UsersDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>UsersDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="UsersDataSet.xss">
       <DependentUpon>UsersDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -171,11 +175,12 @@
     <EmbeddedResource Include="Images\scissors.bmp" />
     <EmbeddedResource Include="Images\scissors_drawn.bmp" />
     <EmbeddedResource Include="Images\scissors_object.bmp" />
+    <Content Include="ReadMe.txt" />
     <Content Include="Users.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Users_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
   </ItemGroup>

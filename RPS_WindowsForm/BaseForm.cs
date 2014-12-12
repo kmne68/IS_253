@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * BaseForm is the parent form for all screens in the GameWorld application. The continue button leads to the next screen (implement tooltips)
+ * the exit button closes the window.
+ * */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
